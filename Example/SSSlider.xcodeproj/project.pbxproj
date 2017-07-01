@@ -15,6 +15,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		ED7F6FCF348B3F11D4B6ACAC /* Pods_SSSlider_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA72605310C521E45E37B7B /* Pods_SSSlider_Example.framework */; };
+		FA57EDCB1F083A02001B5678 /* demo.png in Resources */ = {isa = PBXBuildFile; fileRef = FA57EDCA1F083A02001B5678 /* demo.png */; };
+		FA57EDCD1F083A31001B5678 /* guide.png in Resources */ = {isa = PBXBuildFile; fileRef = FA57EDCC1F083A31001B5678 /* guide.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +32,7 @@
 /* Begin PBXFileReference section */
 		03AA3C24C6062A32140DFADA /* Pods-SSSlider_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSSlider_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSSlider_Tests/Pods-SSSlider_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		05148CD935630D489637F7CD /* Pods_SSSlider_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSSlider_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F75518BCC7DF342D5B32DC4 /* SSSlider.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SSSlider.podspec; path = ../SSSlider.podspec; sourceTree = "<group>"; };
+		1F75518BCC7DF342D5B32DC4 /* SSSlider.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SSSlider.podspec; path = ../SSSlider.podspec; sourceTree = "<group>"; };
 		5DA72605310C521E45E37B7B /* Pods_SSSlider_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSSlider_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* SSSlider_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSSlider_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,10 +45,12 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		61369F3B75FE1E5062558DC9 /* Pods-SSSlider_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSSlider_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSSlider_Example/Pods-SSSlider_Example.release.xcconfig"; sourceTree = "<group>"; };
-		697FBA14C786B58EAA8795F7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		697FBA14C786B58EAA8795F7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AC7AC2D8CDE6B0E96A956079 /* Pods-SSSlider_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSSlider_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSSlider_Tests/Pods-SSSlider_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B830685A21D8294EF631C157 /* Pods-SSSlider_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSSlider_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSSlider_Example/Pods-SSSlider_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		EABFFFAC8ADB879C64431359 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EABFFFAC8ADB879C64431359 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FA57EDCA1F083A02001B5678 /* demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo.png; sourceTree = "<group>"; };
+		FA57EDCC1F083A31001B5678 /* guide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guide.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				FA57EDC91F0839D3001B5678 /* ScreenShot */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for SSSlider */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -159,6 +164,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FA57EDC91F0839D3001B5678 /* ScreenShot */ = {
+			isa = PBXGroup;
+			children = (
+				FA57EDCC1F083A31001B5678 /* guide.png */,
+				FA57EDCA1F083A02001B5678 /* demo.png */,
+			);
+			name = ScreenShot;
+			path = ../ScreenShot;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -216,6 +231,7 @@
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0820;
+						ProvisioningStyle = Manual;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -248,6 +264,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA57EDCD1F083A31001B5678 /* guide.png in Resources */,
+				FA57EDCB1F083A02001B5678 /* demo.png in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -496,11 +514,14 @@
 			baseConfigurationReference = B830685A21D8294EF631C157 /* Pods-SSSlider_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SSSlider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -510,11 +531,14 @@
 			baseConfigurationReference = 61369F3B75FE1E5062558DC9 /* Pods-SSSlider_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SSSlider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

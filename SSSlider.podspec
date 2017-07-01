@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SSSlider'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of SSSlider.'
+  s.version          = '1.0.0'
+  s.summary          = 'A customisable Slider which will show a tooltip when dragging the slider.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,13 +18,15 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+    * A customisable Slider which will show a tooltip when dragging the slider
+    * Supported: horizontal, vertical (up and down) orientation
+    * Return value with percent unit
                        DESC
 
   s.homepage         = 'https://github.com/ngodacdu/SSSlider'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots     = 'https://raw.githubusercontent.com/ngodacdu/SSSlider/master/ScreenShot/demo.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'ngodacdu' => 'du.d.ngo@vntrip.vn' }
+  s.author           = { 'Ngô Đắc Du' => 'ngodacdu92@gmail.com' }
   s.source           = { :git => 'https://github.com/ngodacdu/SSSlider.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 

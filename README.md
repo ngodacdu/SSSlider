@@ -5,11 +5,19 @@
 [![License](https://img.shields.io/cocoapods/l/SSSlider.svg?style=flat)](http://cocoapods.org/pods/SSSlider)
 [![Platform](https://img.shields.io/cocoapods/p/SSSlider.svg?style=flat)](http://cocoapods.org/pods/SSSlider)
 
+* A customisable Slider which will show a tooltip when dragging the slider
+* Supported: horizontal, vertical (up and down) orientation
+* Return value with percent unit
+
+![Change layout type](https://raw.githubusercontent.com/ngodacdu/SSSlider/master/ScreenShot/demo.png)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+* iOS 8.0+
+* Xcode 8.0+
 
 ## Installation
 
@@ -20,9 +28,15 @@ it, simply add the following line to your Podfile:
 pod "SSSlider"
 ```
 
+## Usage
+
+* Setup designable
+
+![Change designable](https://raw.githubusercontent.com/ngodacdu/SSSlider/master/ScreenShot/guide.png)
+
 ## Author
 
-ngodacdu, du.d.ngo@vntrip.vn
+Ngô Đắc Du, ngodacdu92@gmail.com
 
 ## License
 
