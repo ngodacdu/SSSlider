@@ -314,33 +314,30 @@ extension SSSlider {
     }
     
     fileprivate func changeSliderValue(location: CGPoint, action: TouchAction) {
-        guard let handleView = handleView else {
-            return
-        }
         guard let forcegroundView = forcegroundView else {
             return
         }
         let currentValue: CGFloat = {
             if isHorizontal {
-                if location.x <= (forceBorderWidth + handleView.frame.width / 2.0) {
+                if location.x <= (forceBorderWidth + thickness / 2.0) {
                     return 0
                 } else if location.x >= (forcegroundView.frame.size.width - forceBorderWidth - thickness / 2.0) {
-                    return forcegroundView.frame.size.width - 2 * forceBorderWidth
+                    return forcegroundView.frame.size.width - 2 * forceBorderWidth - thickness
                 }
-                return location.x - forceBorderWidth
+                return location.x - forceBorderWidth - thickness / 2.0
             }
-            if location.y <= (forceBorderWidth + handleView.frame.height / 2.0) {
+            if location.y <= (forceBorderWidth + thickness / 2.0) {
                 return 0
             } else if location.y >= (forcegroundView.frame.size.height - forceBorderWidth - thickness / 2.0) {
-                return forcegroundView.frame.size.height - 2 * forceBorderWidth
+                return forcegroundView.frame.size.height - 2 * forceBorderWidth - thickness
             }
-            return location.y - forceBorderWidth
+            return location.y - forceBorderWidth - thickness / 2.0
         }()
         let maximumValue: CGFloat = {
             if isHorizontal {
-                return forcegroundView.frame.width - 2 * forceBorderWidth
+                return forcegroundView.frame.width - 2 * forceBorderWidth - thickness
             }
-            return forcegroundView.frame.height - 2 * forceBorderWidth
+            return forcegroundView.frame.height - 2 * forceBorderWidth - thickness
         }()
         let valuePercent: CGFloat = {
             if isVerticalDown {
@@ -348,6 +345,7 @@ extension SSSlider {
             }
             return currentValue / maximumValue
         }()
+        print(valuePercent)
         switch action {
         case .down:
             didChangeValueBegan?(self, valuePercent)

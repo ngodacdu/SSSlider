@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SSSlider'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A customisable Slider which will show a tooltip when dragging the slider.'
 
 # This description is used to generate tags and improve search results.
