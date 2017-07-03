@@ -18,37 +18,37 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // for horizontal
-        horizontalSlider.didChangeValueBegan = { (slider, value) in
-            print("HorizontalSlider change value began \(value)")
-        }
-        horizontalSlider.didChangeValue = { (slider, value) in
-            print("HorizontalSlider change value \(value)")
-        }
-        horizontalSlider.didChangeValueEnded = { (slider, value) in
-            print("HorizontalSlider change value end \(value)")
-        }
-        
-        // for downVertial
-        downVerticalSlider.didChangeValueBegan = { (slider, value) in
-            print("DownVerticalSlider change value began \(value)")
-        }
-        downVerticalSlider.didChangeValue = { (slider, value) in
-            print("DownVerticalSlider change value \(value)")
-        }
-        downVerticalSlider.didChangeValueEnded = { (slider, value) in
-            print("DownVerticalSlider change value end \(value)")
-        }
-        
-        // for upVertical
-        upVerticalSlider.didChangeValueBegan = { (slider, value) in
-            print("UpVerticalSlider change value began \(value)")
-        }
-        upVerticalSlider.didChangeValue = { (slider, value) in
-            print("UpVerticalSlider change value \(value)")
-        }
-        upVerticalSlider.didChangeValueEnded = { (slider, value) in
-            print("UpVerticalSlider change value end \(value)")
-        }
+//        horizontalSlider.didChangeValueBegan = { (slider, value) in
+//            print("HorizontalSlider change value began \(value)")
+//        }
+//        horizontalSlider.didChangeValue = { (slider, value) in
+//            print("HorizontalSlider change value \(value)")
+//        }
+//        horizontalSlider.didChangeValueEnded = { (slider, value) in
+//            print("HorizontalSlider change value end \(value)")
+//        }
+//        
+//        // for downVertial
+//        downVerticalSlider.didChangeValueBegan = { (slider, value) in
+//            print("DownVerticalSlider change value began \(value)")
+//        }
+//        downVerticalSlider.didChangeValue = { (slider, value) in
+//            print("DownVerticalSlider change value \(value)")
+//        }
+//        downVerticalSlider.didChangeValueEnded = { (slider, value) in
+//            print("DownVerticalSlider change value end \(value)")
+//        }
+//        
+//        // for upVertical
+//        upVerticalSlider.didChangeValueBegan = { (slider, value) in
+//            print("UpVerticalSlider change value began \(value)")
+//        }
+//        upVerticalSlider.didChangeValue = { (slider, value) in
+//            print("UpVerticalSlider change value \(value)")
+//        }
+//        upVerticalSlider.didChangeValueEnded = { (slider, value) in
+//            print("UpVerticalSlider change value end \(value)")
+//        }
     }
 
     override func didReceiveMemoryWarning() {
