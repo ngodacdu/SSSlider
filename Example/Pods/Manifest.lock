@@ -1,5 +1,5 @@
 PODS:
-  - SSSlider (0.1.0)
+  - SSSlider (1.0.1)
 
 DEPENDENCIES:
   - SSSlider (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SSSlider: ec093d7e9838edff870cf6d08d98bcd7dc761d00
+  SSSlider: 1a52c7ba8258d2edaa40695490da7c011aa2b2a6
 
 PODFILE CHECKSUM: 65d68360e25198cb1adb4ab342991fe217aae1ed
 

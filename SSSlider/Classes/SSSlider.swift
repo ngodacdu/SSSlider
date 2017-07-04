@@ -16,8 +16,20 @@ enum SliderOrientation: Int {
 
 @IBDesignable
 public class SSSlider: UIView {
+    
+    /*
+     * Range of value [0.0, 1.0] (percent unit)
+     */
+    @IBInspectable public var value: CGFloat = 0.0
+    @IBInspectable public var isContinuous: Bool = true
+    @IBInspectable public var duration: CGFloat = 0.25
 
-    private var orientation: SliderOrientation = .horizontal
+    //MARK: Orientation
+    private var orientation: SliderOrientation = .horizontal {
+        didSet {
+            relayout()
+        }
+    }
     
     fileprivate var isHorizontal: Bool {
         get {
@@ -31,7 +43,7 @@ public class SSSlider: UIView {
         }
     }
     
-    @IBInspectable var orientionRaw: Int {
+    @IBInspectable var orientationRaw: Int {
         get {
             return orientation.rawValue
         }
@@ -40,9 +52,8 @@ public class SSSlider: UIView {
         }
     }
 
-    /**
-     * Attributes for force view
-     */
+    
+    //MARK: Attributes for force view
     @IBInspectable public var forcePadding: CGFloat = 0.0 {
         didSet {
             relayout()
@@ -75,9 +86,8 @@ public class SSSlider: UIView {
         }
     }
     
-    /**
-     * Attribute for handle view
-     */
+    
+    //MARK: Attribute for handle view
     @IBInspectable public var thickness: CGFloat = 8.0 {
         didSet {
             relayout()
@@ -98,9 +108,8 @@ public class SSSlider: UIView {
         }
     }
     
-    /**
-     * Content label
-     */
+    
+    //MARK: Content label
     @IBInspectable public var content: String? {
         didSet {
             contentLabel?.text = content
@@ -123,9 +132,8 @@ public class SSSlider: UIView {
         }
     }
     
-    /**
-     * Value view
-     */
+    
+    //MARK: Value view
     @IBInspectable public var valueViewBackgroundColor: UIColor = UIColor.lightGray {
         didSet {
             valueView?.backgroundColor = valueViewBackgroundColor
@@ -141,6 +149,8 @@ public class SSSlider: UIView {
     public var didChangeValue: ((_ slider: SSSlider,_ value: CGFloat) -> ())?
     public var didChangeValueEnded: ((_ slider: SSSlider,_ value: CGFloat) -> ())?
 
+    
+    //MARK: Init slider
     override init(frame: CGRect) {
         super.init(frame: frame)
         prepare()
@@ -156,6 +166,8 @@ public class SSSlider: UIView {
         relayout()
     }
     
+    
+    //MARK: Prepare slider's components
     private func prepare() {
         if forcegroundView == nil {
             forcegroundView = SSForcegroundView()
@@ -213,11 +225,23 @@ public class SSSlider: UIView {
             return
         }
         var handleFrame = CGRect.zero
-        handleFrame.origin.x = forceBorderWidth
-        if isVerticalDown {
-            handleFrame.origin.y = forcegroundView.frame.height - forceBorderWidth - thickness
+        let additionValue: CGFloat = {
+            if isHorizontal {
+                return value * (forcegroundView.frame.size.width - 2 * forceBorderWidth - thickness)
+            }
+            return value * (forcegroundView.frame.size.height - 2 * forceBorderWidth - thickness)
+        }()
+        if isHorizontal {
+            handleFrame.origin.x = forceBorderWidth + additionValue
         } else {
+            handleFrame.origin.x = forceBorderWidth
+        }
+        if isHorizontal {
             handleFrame.origin.y = forceBorderWidth
+        } else if isVerticalDown {
+            handleFrame.origin.y = forcegroundView.frame.height - forceBorderWidth - thickness - additionValue
+        } else {
+            handleFrame.origin.y = forceBorderWidth + additionValue
         }
         if isHorizontal {
             handleFrame.size.width = thickness
@@ -265,9 +289,71 @@ public class SSSlider: UIView {
         }
     }
     
+    
+    //MARK: Set value, move handle view
+    public func setValue(percent: CGFloat, animated: Bool) {
+        if percent > 1.0 {
+            value = 1.0
+        } else if percent < 0.0 {
+            value = 0.0
+        } else {
+            value = percent
+        }
+        move(animated: animated)
+    }
+    
+    func currentSliderOrientation() -> SliderOrientation {
+        return orientation
+    }
+    
+    private func move(animated: Bool) {
+        guard let forcegroundView = forcegroundView else {
+            return
+        }
+        let positionHandleView: CGFloat = {
+            if isHorizontal {
+                return value * (forcegroundView.frame.size.width - 2 * forceBorderWidth - thickness) + forceBorderWidth + thickness / 2.0
+            } else if isVerticalDown {
+                return forcegroundView.frame.size.height - value * (forcegroundView.frame.size.height - 2 * forceBorderWidth - thickness) - forceBorderWidth - thickness / 2.0
+            }
+            return value * (forcegroundView.frame.size.height - 2 * forceBorderWidth - thickness) + forceBorderWidth + thickness / 2.0
+        }()
+        let sizeValueView: CGFloat = {
+            if isVerticalDown {
+                return forcegroundView.frame.height - positionHandleView - forceBorderWidth
+            }
+            return positionHandleView - forceBorderWidth
+        }()
+        if animated {
+            UIView.animate(withDuration: TimeInterval(duration), animations: { [weak self] in
+                if true == self?.isHorizontal {
+                    self?.handleView?.center.x = positionHandleView
+                    self?.valueView?.frame.size.width = sizeValueView
+                } else {
+                    self?.handleView?.center.y = positionHandleView
+                    if true == self?.isVerticalDown, let valueViewOriginY = self?.handleView?.center.y {
+                        self?.valueView?.frame.origin.y = valueViewOriginY
+                    }
+                    self?.valueView?.frame.size.height = sizeValueView
+                }
+            })
+        } else {
+            if isHorizontal {
+                handleView?.center.x = positionHandleView
+                valueView?.frame.size.width = sizeValueView
+            } else {
+                handleView?.center.y = positionHandleView
+                if isVerticalDown, let valueViewOriginY = handleView?.center.y {
+                    valueView?.frame.origin.y = valueViewOriginY
+                }
+                valueView?.frame.size.height = sizeValueView
+            }
+        }
+    }
+    
 }
 
-// handle handle view
+//MARK: handle handle view
 extension SSSlider {
     
     fileprivate func moveHandleView(_ touches: Set<UITouch>, _ event: UIEvent?, _ action: TouchAction) {
@@ -292,7 +378,7 @@ extension SSSlider {
             
             changeSliderValue(location: location, action: action)
             
-            UIView.animate(withDuration: 0.25, animations: { [weak self] in
+            UIView.animate(withDuration: TimeInterval(duration), animations: { [weak self] in
                 if true == self?.isHorizontal {
                     self?.handleView?.center.x = location.x
                     if let forceBorderWidth = self?.forceBorderWidth {
@@ -345,13 +431,15 @@ extension SSSlider {
             }
             return currentValue / maximumValue
         }()
-        print(valuePercent)
+        value = valuePercent
         switch action {
         case .down:
             didChangeValueBegan?(self, valuePercent)
             break
         case .move:
-            didChangeValue?(self, valuePercent)
+            if isContinuous {
+                didChangeValue?(self, valuePercent)
+            }
             break
         case .up:
             didChangeValueEnded?(self, valuePercent)

@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3954F2F717BAAFCA51DEFB459F81C8E7 /* SSSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1E0AF0AC9CDC9AEAD680B03D3A1B9D /* SSSlider-dummy.m */; };
+		2B3E31FA83CDE44A19773A7ECBA38065 /* SSSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1E0AF0AC9CDC9AEAD680B03D3A1B9D /* SSSlider-dummy.m */; };
 		61B9F2FA513CF57C6E86F7734959EFCF /* Pods-SSSlider_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1913194DD72C2C0C09B415A8E0859F8A /* Pods-SSSlider_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		69D63063DE19D8DE823BD9A13A553ACB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		6F1DF8E3825AC82AE84C78CF2B7B3197 /* SSSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF20F20E4C245A8A8DD30C8CBBB6596 /* SSSlider.swift */; };
 		80A43B8BB5F66200EFEB7D82332B06AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		8ADA99F3932D93285E9801A2A1715EF1 /* SSForcegroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942C48978FA07B63CDD63FDFF085A65A /* SSForcegroundView.swift */; };
+		88DCA4C9B38A35A94EE3BFD9831906EF /* SSSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA092FFA6629DA09D996C7CB9B92D522 /* SSSlider.swift */; };
 		9A375EFE1738EF87541DA67AD83C2D42 /* SSSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1210A639A93C60E0AE566F1B4C921D15 /* SSSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5F37AAA5901F1024E8F9E5ACF2475AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		BCD17D3B6899BA00E6EB54DFE71E6978 /* Pods-SSSlider_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B335529D8321B14E5CE7B0AF656D19 /* Pods-SSSlider_Tests-dummy.m */; };
+		D207FFAC363724EE6665F5C712F5C4AC /* SSForcegroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0ADFF6F50F2732B784A24804373C7 /* SSForcegroundView.swift */; };
 		D2C6B3C9597D3A239D2F173EB689DF58 /* Pods-SSSlider_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC93689C22143BD831F1869FF6BB553 /* Pods-SSSlider_Example-dummy.m */; };
 		F1D35A5E1E2A0C400635FA8C46DD9541 /* Pods-SSSlider_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB349E1DA9A38768186D13C978C5FFC4 /* Pods-SSSlider_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -34,22 +34,21 @@
 		1210A639A93C60E0AE566F1B4C921D15 /* SSSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSSlider-umbrella.h"; sourceTree = "<group>"; };
 		1913194DD72C2C0C09B415A8E0859F8A /* Pods-SSSlider_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SSSlider_Tests-umbrella.h"; sourceTree = "<group>"; };
 		2B08036C8E3259B2C586B04A22EC4253 /* Pods-SSSlider_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SSSlider_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2FBF943AB13947C41A8D008DC428F9E3 /* Pods_SSSlider_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSSlider_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FBF943AB13947C41A8D008DC428F9E3 /* Pods_SSSlider_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SSSlider_Example.framework; path = "Pods-SSSlider_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		456B5E357FC78FBFA81CA5088B86EFC8 /* Pods-SSSlider_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSSlider_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		45B335529D8321B14E5CE7B0AF656D19 /* Pods-SSSlider_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SSSlider_Tests-dummy.m"; sourceTree = "<group>"; };
-		468730483F512C28AFC72B9EA8A5C695 /* SSSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SSSlider.modulemap; sourceTree = "<group>"; };
-		4DF20F20E4C245A8A8DD30C8CBBB6596 /* SSSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SSSlider.swift; sourceTree = "<group>"; };
+		468730483F512C28AFC72B9EA8A5C695 /* SSSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SSSlider.modulemap; sourceTree = "<group>"; };
 		4E84F5013A98D431FFF50B7F2D901754 /* SSSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSSlider-prefix.pch"; sourceTree = "<group>"; };
 		541D74E04EEE7423FA79CCF18F14853F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63FA04C854A52AB0A2E82C3BBDE8DA8A /* Pods-SSSlider_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SSSlider_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6B1CBA3C976DA787AA0F63E8BD4983A2 /* Pods-SSSlider_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SSSlider_Example-frameworks.sh"; sourceTree = "<group>"; };
-		7E1C8D183F80DDBE468B9FE7402E9FBB /* Pods-SSSlider_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SSSlider_Example.modulemap"; sourceTree = "<group>"; };
-		865550EBA32ECF8B9D69067ED7C69E79 /* SSSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E1C8D183F80DDBE468B9FE7402E9FBB /* Pods-SSSlider_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SSSlider_Example.modulemap"; sourceTree = "<group>"; };
+		865550EBA32ECF8B9D69067ED7C69E79 /* SSSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SSSlider.framework; path = SSSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		902A2E632FA5A4799BD23E6AAEFADF72 /* Pods-SSSlider_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSSlider_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		939A97D17F35F09921F9EA6AEB1BC08E /* Pods-SSSlider_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SSSlider_Tests.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		942C48978FA07B63CDD63FDFF085A65A /* SSForcegroundView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SSForcegroundView.swift; sourceTree = "<group>"; };
+		939A97D17F35F09921F9EA6AEB1BC08E /* Pods-SSSlider_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SSSlider_Tests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95E0ADFF6F50F2732B784A24804373C7 /* SSForcegroundView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SSForcegroundView.swift; sourceTree = "<group>"; };
 		9B8428981001E18C00DA119CF648E7B1 /* Pods-SSSlider_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSSlider_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A06C1E3EF58103FCD2E482DEEC945E6D /* Pods-SSSlider_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SSSlider_Example-resources.sh"; sourceTree = "<group>"; };
 		A0899E1BEB1929B88CCA5EEBC0314F00 /* Pods-SSSlider_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSSlider_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -58,8 +57,9 @@
 		BB1E0AF0AC9CDC9AEAD680B03D3A1B9D /* SSSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSSlider-dummy.m"; sourceTree = "<group>"; };
 		BB349E1DA9A38768186D13C978C5FFC4 /* Pods-SSSlider_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SSSlider_Example-umbrella.h"; sourceTree = "<group>"; };
 		BF364336B10893152171BB7D3B1B91FB /* SSSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSSlider.xcconfig; sourceTree = "<group>"; };
-		C5C04D3F9B33C7E31BAFF452F859B818 /* Pods_SSSlider_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSSlider_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5C04D3F9B33C7E31BAFF452F859B818 /* Pods_SSSlider_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SSSlider_Tests.framework; path = "Pods-SSSlider_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C674585B77B001493BDB95E53B9132F4 /* Pods-SSSlider_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SSSlider_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		CA092FFA6629DA09D996C7CB9B92D522 /* SSSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SSSlider.swift; sourceTree = "<group>"; };
 		CA7CAD5BD9CAEBE7081805D8EBA87056 /* Pods-SSSlider_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SSSlider_Tests-resources.sh"; sourceTree = "<group>"; };
 		CCD9B8C7FB034F155A4B2DAB95784668 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFC93689C22143BD831F1869FF6BB553 /* Pods-SSSlider_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SSSlider_Example-dummy.m"; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 		550B2F4D85B7DC50C7948F9E8D980E83 /* SSSlider */ = {
 			isa = PBXGroup;
 			children = (
-				8005408B7A88967C7FECA602571ADF80 /* SSSlider */,
+				7B0A16C4272B39B7DE3C9B08901F5BC1 /* SSSlider */,
 				32A201138E5EC357E2A45714C3F0AFD1 /* Support Files */,
 			);
 			name = SSSlider;
@@ -163,6 +163,15 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		7B0A16C4272B39B7DE3C9B08901F5BC1 /* SSSlider */ = {
+			isa = PBXGroup;
+			children = (
+				8E1165DDF6816C7532CB9B20EAF958D2 /* Classes */,
+			);
+			name = SSSlider;
+			path = SSSlider;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -174,12 +183,14 @@
 			);
 			sourceTree = "<group>";
 		};
-		8005408B7A88967C7FECA602571ADF80 /* SSSlider */ = {
+		8E1165DDF6816C7532CB9B20EAF958D2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				BDFD1F09AE6C9AA375F6582FBE10D787 /* Classes */,
+				95E0ADFF6F50F2732B784A24804373C7 /* SSForcegroundView.swift */,
+				CA092FFA6629DA09D996C7CB9B92D522 /* SSSlider.swift */,
 			);
-			path = SSSlider;
+			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		8FF00B277005084C55E8479E4B44A271 /* Pods-SSSlider_Tests */ = {
@@ -206,15 +217,6 @@
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BDFD1F09AE6C9AA375F6582FBE10D787 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				942C48978FA07B63CDD63FDFF085A65A /* SSForcegroundView.swift */,
-				4DF20F20E4C245A8A8DD30C8CBBB6596 /* SSSlider.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -259,7 +261,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3EF1B962CBA2C2C6D63643E50FFC9A5D /* Build configuration list for PBXNativeTarget "SSSlider" */;
 			buildPhases = (
-				8377E505467AAD4BA98BBB033E3C7E5B /* Sources */,
+				80BEBE88F547E53D31AA35746BD68387 /* Sources */,
 				395A580F4A84D8A6AF3CCED93B03B8B6 /* Frameworks */,
 				F40D8195B0232444AE4A70B882761C4E /* Headers */,
 			);
@@ -352,13 +354,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8377E505467AAD4BA98BBB033E3C7E5B /* Sources */ = {
+		80BEBE88F547E53D31AA35746BD68387 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ADA99F3932D93285E9801A2A1715EF1 /* SSForcegroundView.swift in Sources */,
-				3954F2F717BAAFCA51DEFB459F81C8E7 /* SSSlider-dummy.m in Sources */,
-				6F1DF8E3825AC82AE84C78CF2B7B3197 /* SSSlider.swift in Sources */,
+				D207FFAC363724EE6665F5C712F5C4AC /* SSForcegroundView.swift in Sources */,
+				2B3E31FA83CDE44A19773A7ECBA38065 /* SSSlider-dummy.m in Sources */,
+				88DCA4C9B38A35A94EE3BFD9831906EF /* SSSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
